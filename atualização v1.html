@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRIADE GROUP | CONHEÇA NOSSAS CIDADES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background-color: #f1f3f9; color: #222; }
+    header {
+      background: linear-gradient(to right, #0215c0, #0530d3);
+      padding: 20px 40px; display: flex; justify-content: space-between;
+      align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white; margin-left: 20px; text-decoration: none;
+      font-weight: 600; transition: color 0.3s;
+    }
+    nav a:hover { color: #ffcc00; }
+
+    .banner-carousel {
+      overflow: hidden; position: relative; height: 120px; background: #fff;
+    }
+    .banner-track {
+      display: flex; transition: transform 0.8s ease-in-out; width: 300%;
+    }
+    .banner-slide { flex: 0 0 100%; display: flex; justify-content: center; }
+    .banner-slide img { width: 100%; height: auto; border-radius: 8px; }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://cdn.discordapp.com/attachments/1329458221957779577/1382746381218873384/logo_site.png?ex=684c466b&is=684af4eb&hm=d38b4bfec3335065dfa3347e1449c1227538c8bb9b0160a1b9eb6be9871297e0&')
+        center/cover no-repeat;
+      height: 80vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; color: white;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+    .section {
+      padding: 60px 20px; max-width: 1100px; margin: auto;
+    }
+    .section h2 {
+      font-size: 2.5rem; margin-bottom: 30px; text-align: center;
+      color: #0333d3;
+    }
+
+    .services {
+      display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;
+    }
+    .service {
+      background: #fff; width: 300px; padding: 30px;
+      border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .service h3 { color: #0333d3; margin-bottom: 10px; }
+    .service p { font-size: 0.95rem; color: #333; }
+
+    section#contato p { text-align: center; font-size: 1.1rem; }
+
+    footer {
+      background: #021234; color: #fff; text-align: center; padding: 20px;
+    }
+
+    .discord-button {
+      position: fixed; top: 20px; right: 20px;
+      background-color: #5865F2; color: #fff; font-size: 24px;
+      padding: 12px 14px; border-radius: 50%; text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .discord-button:hover {
+      background-color: #4752c4; transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .services { flex-direction: column; align-items: center; }
+      header, .section { padding: 20px; }
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>TRIADE GROUP</strong>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<div class="banner-carousel" id="carousel-topo">
+  <div class="banner-track">
+    <div class="banner-slide"><img src="https://cdn.discordapp.com/.../BANNER_SITE.png" alt=""></div>
+    <div class="banner-slide"><img src=".../BANNER_SITE.png" alt=""></div>
+    <div class="banner-slide"><img src=".../BANNER_SITE.png" alt=""></div>
+  </div>
+</div>
+
+<section class="hero">
+  <div>
+    <h1>Bem-vindo à Tríade Group</h1>
+    <p>Criando experiências imersivas com excelência</p>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <h2>Sobre Nós</h2>
+  <p>Samos uma equipe focada em crescer no cenario do gta rp venha conhecer nossas cidades e venha se divertir.</p>
+</section>
+
+<section id="servicos" class="section">
+  <h2>Nossos Serviços</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Fazemos Cidades</h3>
+      <p>Entre em contato com nossa equipe por e-mail, telefone ou Discord.</p>
+    </div>
+    <div class="service">
+      <h3>Conheça Nossas Cidades</h3>
+      <p>Todas são full RP, com foco em realismo e qualidade.</p>
+    </div>
+    <div class="service">
+      <h3>Gestão de Projetos</h3>
+      <p>Projetos são 100% confidenciais e divulgados somente com autorização.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <h2>Fale Conosco</h2>
+  <p>Email: <strong>triadegroup77@gmail.com</strong><br>WhatsApp: <strong>(00) 90000-0000</strong></p>
+</section>
+
+<a href="https://discord.gg/jNGxU4Hjbq" target="_blank" class="discord-button" title="Entrar no Discord">
+  <i class="fab fa-discord"></i>
+</a>
+
+<script>
+  function iniciarCarrossel(id) {
+    const carrossel = document.getElementById(id);
+    const track = carrossel.querySelector('.banner-track');
+    let slideAtual = 0;
+    const total = track.children.length;
+    setInterval(() => {
+      slideAtual = (slideAtual + 1) % total;
+      track.style.transform = `translateX(-${slideAtual * 100}%)`;
+    }, 5000);
+  }
+  iniciarCarrossel('carousel-topo');
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+<section class="section" id="banners-verticais-carousel">
+  <h2 style="text-align:center;">Cidades da triade group</h2>
+  <div id="verticalCarousel" style="position: relative; width: 360px; height: 640px; margin: auto; overflow: hidden;">
+    <div class="carousel-track" style="display: flex; flex-direction: column; transition: transform 0.8s ease-in-out;">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382797947938279474/gaucha_logo.png?ex=684c7671&is=684b24f1&hm=82b64687973dc10fce3e1a1695d9e9448b2950131e2a565206e37094c5fcf274&" alt="Banner 1" style="width: 100%; height: auto;" />
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382800676274569297/fundo_privi.png?ex=684c78fc&is=684b277c&hm=8f49d9e40d659bfd0a625b8e49784e372761dba2fd08ce056d0bd2f3ac019150&" alt="Banner 2" style="width: 100%; height: auto;" />
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382803323370864730/fundo_pvp.png?ex=684c7b73&is=684b29f3&hm=6d61c5d8ba3127554435a81391e11bf4534b3ebda0805af191dfcbb6917a7eeb&" alt="Banner 3" style="width: 100%; height: auto;" />
+    </div>
+  </div>
+</section>
+
+<script>
+  const track = document.querySelector('#verticalCarousel .carousel-track');
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % 3;
+    track.style.transform = `translateY(-${index * 640}px)`;
+  }, 5000);
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  .cidade-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .cidade-section h2 {
+    font-size: 2.5rem;
+    color: #0333d3;
+    margin-bottom: 40px;
+  }
+
+  .cidade-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .cidade-card {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 16px;
+    width: 280px;
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cidade-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+  }
+
+  .cidade-card i {
+    font-size: 44px;
+    margin-bottom: 14px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+    transition: transform 0.3s;
+  }
+
+  .cidade-card:hover i {
+    transform: scale(1.2);
+  }
+
+  .cidade-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .cidade-card p {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    color: #ccc;
+  }
+
+  .cidade-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+
+  .cidade-card a:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+<section id="conectar-cidades" class="cidade-section">
+  <h2>Cidades Feitas Pela Triade Group</h2>
+  <div class="cidade-cards">
+
+    <!-- Cidade 1 -->
+    <div class="cidade-card">
+      <i class="fas fa-city" style="color: #f81505;"></i>
+      <h3>Privilege SP</h3>
+      <p>Roleplay intenso e economia balanceada</p>
+      <a href="fivem://connect/190.102.42.209" style="background-color: #fa1505; color: white;">Conectar</a>
+    </div>
+
+    <!-- Cidade 2 -->
+    <div class="cidade-card">
+      <i class="fas fa-map-marked-alt" style="color: #ff9900;"></i>
+      <h3>Gaucha RolePlay</h3>
+      <p>Servidor leve e com foco em iniciantes</p>
+      <a href="fivem://connect/cfx.re/join/b7gyzb" style="background-color: #ff9900; color: white;">Conectar</a>
+    </div>
+
+    <!-- Cidade 3 -->
+    <div class="cidade-card">
+      <i class="fas fa-user-ninja" style="color: #2e6e03;"></i>
+      <h3>Norte PVP</h3>
+      <p>Venha trocar tiro na melhor cidade pvp do fivem</p>
+      <a href="fivem://connect/IP_DA_CIDADE_3" style="background-color: #05b605; color: white;">Conectar</a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  body {
+    background: radial-gradient(circle at top left, #1f1f1f, #2b2b2b);
+    background-attachment: fixed;
+    color: #fff;
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ranking de Cidades</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .ranking-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px;
+    }
+    .ranking-column {
+      width: 300px;
+    }
+    .ranking-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .ranking-card {
+      background-color: #1a1a1a;
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ranking-card img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 5px;
+      background-color: #000;
+    }
+    .ranking-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .ranking-nome {
+      font-weight: bold;
+    }
+    .ranking-desc {
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ranking-container">
+  <!-- Coluna 1 - Facções -->
+  <div class="ranking-column">
+    <div class="ranking-title">FACÇÕES</div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855727856484492/gaucha.png.png?ex=684cac41&is=684b5ac1&hm=c2e43a048152461bf7ac460913b3ff2ab943c58ff3933166c693d8113901446c&" alt="Gaucha">
+      <div class="ranking-info">
+        <div class="ranking-nome">TURQUIA</div>
+        <div class="ranking-desc">#1 - Gaucha Roleplay</div>
+      </div>
+    </div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855728628367441/privilege.png.png?ex=684cac41&is=684b5ac1&hm=d50d6a39612afeae2c2acd9a67292621f5dabb5d5391d298b17ab2ca3de48ac0&" alt="Privilege">
+      <div class="ranking-info">
+        <div class="ranking-nome">JAPÃO</div>
+        <div class="ranking-desc">#2 - Privilege SP</div>
+      </div>
+    </div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855728376582154/norte.png.png?ex=684cac41&is=684b5ac1&hm=4eaad2829712c61b01895b3688031253ce1b1d1f1e0526b07d9d1590a5e6dad3&" alt="Norte PVP">
+      <div class="ranking-info">
+        <div class="ranking-nome">ALEMANHA</div>
+        <div class="ranking-desc">#3 - Norte PVP</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Coluna 2 - Mais Ricos -->
+  <div class="ranking-column">
+    <div class="ranking-title">MAIS RICOS</div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855727856484492/gaucha.png.png?ex=684cac41&is=684b5ac1&hm=c2e43a048152461bf7ac460913b3ff2ab943c58ff3933166c693d8113901446c&" alt="Gaucha">
+      <div class="ranking-info">
+        <div class="ranking-nome">Rodrigues Gaucho</div>
+        <div class="ranking-desc">#1 - R$ 2.017.924.555</div>
+      </div>
+    </div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855728376582154/norte.png.png?ex=684cac41&is=684b5ac1&hm=4eaad2829712c61b01895b3688031253ce1b1d1f1e0526b07d9d1590a5e6dad3&" alt="Norte">
+      <div class="ranking-info">
+        <div class="ranking-nome">Gabz Triade</div>
+        <div class="ranking-desc">#2 - R$ 1.460.977.169</div>
+      </div>
+    </div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855728628367441/privilege.png.png?ex=684cac41&is=684b5ac1&hm=d50d6a39612afeae2c2acd9a67292621f5dabb5d5391d298b17ab2ca3de48ac0&" alt="Privilege">
+      <div class="ranking-info">
+        <div class="ranking-nome">AGUINALDO</div>
+        <div class="ranking-desc">#3 - R$ 1.044.601.830</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coluna 3 - Online -->
+  <div class="ranking-column">
+    <div class="ranking-title">ONLINE</div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855727856484492/gaucha.png.png?ex=684cac41&is=684b5ac1&hm=c2e43a048152461bf7ac460913b3ff2ab943c58ff3933166c693d8113901446c&" alt="Gaucha">
+      <div class="ranking-info">
+        <div class="ranking-nome">Rodrigues Gaucho</div>
+        <div class="ranking-desc">#1 - 1919 Horas</div>
+      </div>
+    </div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855728628367441/privilege.png.png?ex=684cac41&is=684b5ac1&hm=d50d6a39612afeae2c2acd9a67292621f5dabb5d5391d298b17ab2ca3de48ac0&" alt="Privilege">
+      <div class="ranking-info">
+        <div class="ranking-nome">MARCO</div>
+        <div class="ranking-desc">#2 - 1686 Horas</div>
+      </div>
+    </div>
+
+    <div class="ranking-card">
+      <img src="https://cdn.discordapp.com/attachments/1329458221957779577/1382855728376582154/norte.png.png?ex=684cac41&is=684b5ac1&hm=4eaad2829712c61b01895b3688031253ce1b1d1f1e0526b07d9d1590a5e6dad3&" alt="Norte">
+      <div class="ranking-info">
+        <div class="ranking-nome">Lolozem Alves</div>
+        <div class="ranking-desc">#3 - 1086 Horas</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ranking de Kills</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffcc;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #1e1e1e;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #00ffcc;
+      color: #000;
+    }
+
+    tr:nth-child(even) {
+      background-color: #2c2c2c;
+    }
+
+    tr:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ranking de Jogadores - Mais Kills</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Posição</th>
+        <th>Jogador</th>
+        <th>Kills</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lolozem Alves</td>
+        <td>38</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Gabz Triade</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rodrigues Gaucha</td>
+        <td>10</td>
+      </tr>
+      <!-- Adicione mais jogadores aqui -->
+    </tbody>
+  </table>
+</body>
+</html>
+
+
+<footer>
+  &copy; 2025 TRIADE GROUP. Todos os direitos reservados.
+</footer>
+
